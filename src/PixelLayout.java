@@ -1,4 +1,3 @@
-import javax.swing.*;
 import java.awt.*;
 
 public class PixelLayout {
@@ -11,9 +10,10 @@ public class PixelLayout {
     public PixelLayout(int row, int col, int pixelType, Color color){
         this.row=row;
         this.col=col;
-        this.pixelType=pixelType;
+        this.pixelType = pixelType;
         this.color=color;
     }
+
 
     public void render(Graphics g) {
         int tileX = this.col * pixelSize;
