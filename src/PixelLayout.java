@@ -1,5 +1,9 @@
 import java.awt.*;
 
+/**
+ * @author Martin Petrov
+ * Клас, определящ отделните атрибути на всеки пиксел и дефиниращ техния render метод
+ */
 public class PixelLayout {
     private int row;
     private int col;
@@ -13,7 +17,6 @@ public class PixelLayout {
         this.pixelType = pixelType;
         this.color=color;
     }
-
 
     public void render(Graphics g) {
         int tileX = this.col * pixelSize;

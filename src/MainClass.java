@@ -3,6 +3,7 @@ public class MainClass {
 
     public static void main(String[] args) {
 
+        //инстанции на телефонни екрани
         Telephone telephoneScreen = new Telephone();
         telephoneScreen.telephoneScreen();
         telephoneScreen.appendPhoneToCategory();
@@ -23,6 +24,8 @@ public class MainClass {
         telephoneScreen5.telephoneScreen();
         telephoneScreen5.appendPhoneToCategory();
 
+
+        //масив обекти Telephone, съхраняващ всички генерирани обекти от този тип
         Telephone[] collectionOfPhones = new Telephone[5];
         collectionOfPhones[0] = telephoneScreen;
         collectionOfPhones[1] = telephoneScreen2;
@@ -30,6 +33,7 @@ public class MainClass {
         collectionOfPhones[3] = telephoneScreen4;
         collectionOfPhones[4] = telephoneScreen5;
 
+        //определяне категорията на телефонните екрани от масива обекти Telephone
         for (int i = 0; i < 5; i++) {
             collectionOfPhones[i].appendPhoneToCategory();
         }
